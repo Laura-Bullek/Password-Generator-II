@@ -7,12 +7,18 @@
 // - Generate password when "Generate Password" button is clicked
 // - Change button text after generated to say "Generate Again"
 
+// Variables for lower/uppercase, numbers and characters
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbers = "0123456789"; 
+const specCharacters = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~"; 
+
 // Assignment Code 
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  // Stored this function as a variable (function expression)
+  // Stored this function as a variable
   var password = generatePassword();
   // Text area where the password will generate
   var passwordText = document.querySelector("#password");
